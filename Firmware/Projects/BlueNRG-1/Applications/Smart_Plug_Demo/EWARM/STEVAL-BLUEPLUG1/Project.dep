@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>1600123037</fileChecksum>
+    <configuration>
+        <name>Smart_Plug</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\Src\appli_nvm.c</file>
+            <file>$PROJ_DIR$\..\..\Src\appli_sensor.c</file>
+            <file>$PROJ_DIR$\..\..\Src\appli_generic.c</file>
+            <file>$PROJ_DIR$\..\..\Src\appli_mesh.c</file>
+            <file>$PROJ_DIR$\..\..\Src\appli_vendor.c</file>
+            <file>$PROJ_DIR$\..\..\Src\appli_light.c</file>
+            <file>$PROJ_DIR$\..\..\Src\BlueNRG1_it.c</file>
+            <file>$PROJ_DIR$\..\..\Src\hal.c</file>
+            <file>$PROJ_DIR$\..\..\Src\main.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_wdg.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\src\BLUEPLUG1_Led.c</file>
+            <file>$PROJ_DIR$\..\..\Src\meter.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\src\PWM_config.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_flash.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_pka.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_rng.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\src\BLUEPLUG1_Com.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\src\BLUEPLUG1_Button.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\CMSIS\Device\ST\BlueNRG1\Source\system_bluenrg1.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\src\metrology.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_dma.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_gpio.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_i2c.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_mft.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\src\PWM_handlers.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_rtc.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\Bluetooth_LE\library\libbluenrg1_stack.a</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_sysCtrl.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\Bluetooth_LE\src\stack_user_cfg.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\src\clock.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\src\metrology_hal.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\src\BLUEPLUG1_Config.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\src\Metrology_Init.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\misc.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_adc.c</file>
+            <file>$PROJ_DIR$\..\..\Src\metering.c</file>
+            <file>$PROJ_DIR$\..\..\Src\models_if.c</file>
+            <file>$PROJ_DIR$\..\..\Src\pal_nvm.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_spi.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_uart.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\src\miscutil.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\Metrology\include\inc\st_device.h</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\misc.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\src\context_switch.s</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\metrology_hal.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\Metrology_Init.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\meter.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_mft.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\metrology.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\PWM_config.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\appli_nvm.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\main.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\src\radio_ota.c</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BLUEPLUG1_Config.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\src\hal_radio.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\src\sleep.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\Metrology\tasks\src\metroTask.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Src\common.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Src\generic.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\src\osal.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\Metrology\handlers\src\handler_metrology.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Src\light.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Src\light_lc.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Src\sensors.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Src\vendor.c</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BLUEPLUG1_Led.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\pal_nvm.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\src\fifo.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Src\time_scene.c</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\appli_sensor.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\src\gp_timer.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\Src\mesh_cfg.c</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_uart.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BLUEPLUG1_Com.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_spi.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\metering.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Exe\BlueNRG1_Smart_Plug_Demo.bin</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BLUEPLUG1_Button.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_rtc.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\radio_ota.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_pka.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\handler_metrology.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_sysCtrl.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\metroTask.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\hal.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\time_scene.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\light.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\PWM_handlers.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_it.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\models_if.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_adc.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_wdg.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_gpio.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_dma.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_i2c.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_flash.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\osal.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\common.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\generic.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\mesh_cfg.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\appli_vendor.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\system_bluenrg1.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_rng.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\vendor.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\appli_light.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\metrology_hal.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_spi.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_gpio.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_it.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\mesh_cfg.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\metrology.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BLUEPLUG1_Led.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\generic.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BLUEPLUG1_Com.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\appli_mesh.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_mft.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\system_bluenrg1.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\PWM_handlers.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\handler_metrology.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\models_if.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\metering.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_uart.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\appli_generic.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\appli_vendor.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\Metrology_Init.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\osal.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\gp_timer.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\common.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\context_switch.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\PWM_config.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\radio_ota.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\fifo.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\time_scene.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\hal.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\hal_radio.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BLUEPLUG1_Button.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\Project.pbd</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\hal_radio.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\light_lc.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\sensors.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\appli_light.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Exe\Project.out</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\miscutil.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\appli_generic.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_rng.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\appli_nvm.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_pka.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\clock.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\vendor.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_sysCtrl.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_dma.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\pal_nvm.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_wdg.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_flash.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_rtc.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\sleep.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\fifo.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\stack_user_cfg.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\meter.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_i2c.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\appli_mesh.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\main.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\gp_timer.xcl</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BlueNRG1_adc.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\appli_sensor.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\misc.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\clock.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\sensors.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\light.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\sleep.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\metroTask.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\light_lc.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\BLUEPLUG1_Config.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\miscutil.o</file>
+            <file>$PROJ_DIR$\Smart_Plug\Obj\stack_user_cfg.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\inc\BlueNRG1_spi.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\inc\hal_types.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\inc\BLUEPLUG1_Com.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\inc\sleep.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\inc\BlueNRG1_flash.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\inc\BlueNRG1_pka.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\inc\USER_Platform_Configuration_STEVAL_BLUEPLUG1.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\inc\BlueNRG1_dma.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\CMSIS\Device\ST\BlueNRG1\Include\system_bluenrg.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\inc\BLUEPLUG1_Button.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\inc\BLUEPLUG1_Led.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\CMSIS\Device\ST\BlueNRG1\Include\system_bluenrg1.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\BlueNRG1_conf.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\inc\BlueNRG1_sysCtrl.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\inc\BLUEPLUG1_Config.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\Inc\types.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\inc\BlueNRG1_uart.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\inc\BlueNRG1_gpio.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\inc\misc.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\inc\compiler.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\inc\BlueNRG1_i2c.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\BlueNRG1_it.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\hal.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\CMSIS\Device\ST\BlueNRG1\Include\bluenrg_x_device.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\CMSIS\Device\ST\BlueNRG1\Include\BlueNRG1.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\hal_common.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\inc\asm.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\inc\clock.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\inc\fifo.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\inc\hal_radio.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\inc\metrology_init.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\inc\crash_handler.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\inc\stpm_metrology.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\app_state.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\inc\BlueNRG1_radio.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\inc\BlueNRG1_adc.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\inc\metrology.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\BLE_Application\layers_inc\bluenrg1_gatt_server.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\BLE_Application\layers_inc\bluenrg1_hal.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\BLE_Application\layers_inc\ble_const.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\meter.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\Bluetooth_LE\inc\link_layer.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\inc\BlueNRG1_rng.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\inc\BlueNRG1_wdg.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\LowLevelIOInterface.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\inc\osal.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\inc\metrology_hal.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\inc\miscutil.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\Metrology\tasks\inc\metro_Task.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\Metrology\nvm\handlers\inc\nvram.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\Bluetooth_LE\inc\ble_status.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\BLE_Application\layers_inc\bluenrg1_gap.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\BLE_Application\layers_inc\sm.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\Metrology\handlers\inc\handler_metrology.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\metering.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\chat.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\ble_func.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\BLE_Application\layers_inc\link_layer.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\inc\BlueNRG1_rtc.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yfuns.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\bluenrg_config.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\mesh_cfg.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\Inc\serial_if.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Inc\vendor.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Inc\light.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\inc\PWM_config.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Inc\generic.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Inc\common.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\appli_vendor.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_float_setup.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\mesh_cfg_usr.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\Inc\pal_nvm.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\Bluetooth_LE\inc\bluenrg1_events.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\inc\gp_timer.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\appli_light.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Inc\sensors.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Inc\light_lc.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\Bluetooth_LE\inc\bluenrg1_api.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\inc\PWM_handlers.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\Bluetooth_LE\inc\bluenrg1_stack.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\appli_nvm.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\inc\BlueNRG1_mft.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\appli_generic.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\models_if.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\Bluetooth_LE\inc\stack_user_cfg.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\appli_mesh.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\appli_sensor.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\Inc\bluenrg_mesh.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Inc\time_scene.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\Inc\pal_if.h</file>
+            <file>$PROJ_DIR$\nvmbase_data.bin</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_Cryptolib\BNRG1\Lib\libcrypto_V300_CM0.a</file>
+            <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\inc\radio_ota.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\Inc\appli_test.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl6M_tlf.a</file>
+            <file>$PROJ_DIR$\BlueNRG1.icf</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\Library\libBlueNRG_Mesh_CM0_1Key.a</file>
+            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\Smart_Plug\List\Project.map</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 141 294</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Src\appli_nvm.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 145</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 50</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 258 218 211 212 215 193 179 259 213 207 217 208 209 214 210 186 199 192 204 194 203 176 184 190 195 180 201 183 205 175 200 196 181 202 197 182 185 177 206 178 187 188 189 191 198 273 252 263 281 264 278 260</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Src\appli_sensor.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 164</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 69</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 213 207 217 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 190 195 180 201 183 205 175 200 196 181 202 197 182 185 177 206 178 187 179 188 189 191 198 268 281 269 279 252 263 258 259 260 280 262</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Src\appli_generic.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 143</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 122</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 213 207 217 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 190 195 180 201 183 205 175 200 196 181 202 197 182 185 177 206 178 187 179 188 189 191 198 275 257 281 252 263 267 255 258 259 260 273</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Src\appli_mesh.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 160</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 114</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 258 218 211 212 215 193 179 259 213 207 217 208 209 214 210 186 199 192 204 194 203 176 184 190 195 180 201 183 205 175 200 196 181 202 197 182 185 177 206 178 187 188 189 191 198 251 272 270 265 277 252 263 281 276 278 257 253 273 266</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Src\appli_vendor.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 123</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 100</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 213 207 217 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 190 195 180 201 183 205 175 200 196 181 202 197 182 185 177 206 178 187 179 188 189 191 198 281 278 254 261 260 267 255 258 259 276 252 263</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Src\appli_light.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 140</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 104</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 213 207 217 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 190 195 180 201 183 205 175 200 196 181 202 197 182 185 177 206 178 187 179 188 189 191 198 267 255 281 258 259 260 252 263 271 256 274 273 280 262</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Src\BlueNRG1_it.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 108</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 88</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 206 272 210 218 211 212 215 193 270 265 217 208 209 214 186 199 192 204 194 203 176 184 278 198 271 256 274 263 281 197 182 195 180 201 183 205 175 200 196 181 202 185 177 190 187 179 222 258 259 238 213 207 178 188 189 191 252 221 223 227 41 237 244 239 240 231 245 230 241 229 242 232 228 248 243 266 224 246 247 249</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Src\hal.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 133</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 84</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 207 217 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 190 195 180 201 183 205 175 200 196 181 202 197 182 185 177 206 213 178 187 179 188 189 191 198 252 263 281 278 271 256 274</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Src\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 161</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 51</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 213 207 217 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 190 195 180 201 183 205 175 200 196 181 202 197 182 185 177 206 178 187 179 188 189 191 198 278 267 255 281 258 259 276 252 263 256 274 271 238 222 221 223 227 41 237 244 239 240 231 245 230 241 270 229 242 232 228 248 243 272 265 266 224 246 247 249</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_wdg.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 152</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 91</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 234 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\src\BLUEPLUG1_Led.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 111</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 65</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 190 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 195 180 201 183 205 175 200 196 181 202 197 182 185 177</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Src\meter.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 158</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 46</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 231 245 227 223 210 218 211 212 215 193 41 237</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\src\PWM_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 129</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 49</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 256 274 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 263 281 198 197 182 195 180 201 183 205 175 200 196 181 202 185 177 190</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_flash.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 153</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 95</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 180 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_pka.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 146</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 80</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 181 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_rng.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 144</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 102</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 233 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\src\BLUEPLUG1_Com.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 113</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 73</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 177 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 195 180 201 183 205 175 200 196 181 202 197 182 185 190 187 179 250 235</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\src\BLUEPLUG1_Button.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 135</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 77</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 185 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 195 180 201 183 205 175 200 196 181 202 197 182 177 190</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\CMSIS\Device\ST\BlueNRG1\Source\system_bluenrg1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 116</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 101</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 180 202 238 222 258 179 259 213 207 217 190 195 201 183 205 175 200 196 181 197 182 185 177 206 178 187 188 189 191 198</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\src\metrology.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 110</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 48</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 227 223 210 218 211 212 215 193 41 237</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_dma.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 150</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 93</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 183 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 107</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 92</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 201 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_i2c.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 159</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 94</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 205 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_mft.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 115</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 47</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 274 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\src\PWM_handlers.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 117</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 87</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 271 256 274 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 263 281 198 197 182 195 180 201 183 205 175 200 196 181 202 185 177 190</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_rtc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 154</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 78</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 249 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_sysCtrl.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 149</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 82</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 196 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\Bluetooth_LE\src\stack_user_cfg.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 174</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 157</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 270 210 218 211 212 215 193 176 277</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\src\clock.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 166</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 147</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 195 180 201 183 205 175 200 196 181 202 217</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\src\metrology_hal.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 105</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 44</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 223 210 218 211 212 215 193 227 41 237 258 179 259 176 200 208 209 214 186 199 192 204 194 203 184 201 221 195 180 183 205 175 196 181 202 197 182 185 177 190 244 239 240 231 245 230 241 270 229 242 232 228 248 243 272 265 266 217 224 246 187 247 274 249</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\src\BLUEPLUG1_Config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 172</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 53</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 195 180 201 183 205 175 200 196 181 202 197 182 185 177 190</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STEVAL-BLUEPLUG1\src\Metrology_Init.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 124</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 221 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 195 180 208 201 183 205 175 200 196 181 202 197 182 185 177 190 223 227 41 237 244 239 240 231 245 230 241 270 229 242 232 228 248 243 272 265 266 217 224 246 187 179 247 258 259 274 249</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\misc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 165</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 42</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 202 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 163</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 90</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 226 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Src\metering.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 120</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 75</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 245 227 223 210 218 211 212 215 193 41 237</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Src\models_if.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 119</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 89</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 213 207 217 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 190 195 180 201 183 205 175 200 196 181 202 197 182 185 177 206 178 187 179 188 189 191 198 278 254 281 255 258 259 268 257 282 260 275 252 263 261 267 279 273 270 256 274 271 269</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Src\pal_nvm.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 151</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 66</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 198 264 283 258 218 211 212 215 193 179 259 180 208 209 214 210 186 199 192 204 194 203 176 184 281 252 263</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_spi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 106</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 74</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 175 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\BlueNRG1_uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 121</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 72</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 200 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\src\miscutil.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 173</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 142</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 238 222 258 179 259 213 207 217 190 195 180 201 183 205 175 200 196 181 202 197 182 185 177 206 178 187 188 189 191 198 252 263 281</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\src\context_switch.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 128</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 216</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\src\radio_ota.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 130</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 79</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 210 218 211 212 215 193 287 195 180 208 209 214 186 199 192 204 194 203 176 184 201 183 205 175 200 196 181 202</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\src\hal_radio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 134</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 137</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 220 225 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\src\sleep.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 169</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 155</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 210 218 211 212 215 193 258 179 259 208 209 214 186 199 192 204 194 203 176 184 195 180 201 183 205 175 200 196 181 202 178 238 222 213 207 217 190 197 182 185 177 206 187 188 189 191 198</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\Metrology\tasks\src\metroTask.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 170</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 83</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 239 223 210 218 211 212 215 193 227 41 240 197 182 208 209 214 186 199 192 204 194 203 176 184 195 180 201 183 205 175 200 196 181 202 185 177 190 244 258 179 259</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Src\common.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 127</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 97</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 213 207 217 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 190 195 180 201 183 205 175 200 196 181 202 197 182 185 177 206 178 187 179 188 189 191 198 252 263 281 257 255 258 259 260 254 269</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Src\generic.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 112</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 98</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 213 207 217 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 190 195 180 201 183 205 175 200 196 181 202 197 182 185 177 206 178 187 179 188 189 191 198 252 263 281 257 255 258 259 260</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\src\osal.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 125</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 96</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 258 218 211 212 215 193 179 259 236</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\Metrology\handlers\src\handler_metrology.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 118</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 81</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 244 210 218 211 212 215 193 227 223 41 239 240 197 182 208 209 214 186 199 192 204 194 203 176 184 195 180 201 183 205 175 200 196 181 202 185 177 190 258 179 259</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Src\light.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 168</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 86</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 213 207 217 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 190 195 180 201 183 205 175 200 196 181 202 197 182 185 177 206 178 187 179 188 189 191 198 252 263 281 255 258 259 257 260 280 262</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Src\light_lc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 171</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 138</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 213 207 217 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 190 195 180 201 183 205 175 200 196 181 202 197 182 185 177 206 178 187 179 188 189 191 198 252 263 281 257 255 258 259 260 269</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Src\sensors.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 167</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 139</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 213 207 217 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 190 195 180 201 183 205 175 200 196 181 202 197 182 185 177 206 178 187 179 188 189 191 198 252 263 281 268 260 269 258 259 280 262</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Src\vendor.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 103</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 148</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 213 207 217 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 190 195 180 201 183 205 175 200 196 181 202 197 182 185 177 206 178 187 179 188 189 191 198 252 263 281 254 288 276 258 259</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\src\fifo.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 131</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 156</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 219 210 218 211 212 215 193 236</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\MeshModel\Src\time_scene.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 132</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 85</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 213 207 217 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 190 195 180 201 183 205 175 200 196 181 202 197 182 185 177 206 178 187 179 188 189 191 198 252 263 281 260 258 259 280 262 282</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\src\gp_timer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 126</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 162</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 217 208 209 214 210 218 211 212 215 193 186 199 192 204 194 203 176 184 266</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\Src\mesh_cfg.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 109</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 99</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 252 263 281 198 176 210 218 211 212 215 193 203 258 179 259 257 255 268 254 269 278</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Smart_Plug\Exe\Project.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 294</file>
+                </tool>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 76</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 290 284 143 140 160 145 164 123 163 150 153 107 159 108 115 146 144 154 106 149 121 152 135 113 172 111 166 127 128 131 112 126 133 134 118 26 168 171 161 109 158 120 110 105 124 170 165 173 119 125 151 129 117 130 167 169 174 116 132 103 291 285 293 286 292 289</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+</project>
