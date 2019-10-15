@@ -9,7 +9,7 @@ Date                Author                   Description
 #define PACKET_COMMON_H__
 
 
-#define FRAME_WINDOW						(5)
+#define FRAME_WINDOW						(7)
 #define FRAME_SIZE							(8)
 
 

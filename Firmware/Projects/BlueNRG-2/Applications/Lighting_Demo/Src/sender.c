@@ -13,7 +13,7 @@ Date                Author                   Description
 #include "packet_common.h"
 
 #define RESEND_TIMEOUT					(1000)										// 超时重发时间
-#define TIME_OUT_COUNT						(20)							      // 超时重发次数，当超时次数超过时，发送失败
+#define TIME_OUT_COUNT						(10)							      // 超时重发次数，当超时次数超过时，发送失败
 
 
 enum{
@@ -46,13 +46,9 @@ static struct dl_list s_packet_list;
 /* 应用数据包未使用列表 */
 static struct dl_list s_packet_unuse;
 
-
-/* 已经应答的数据帧缓存 */
-//static struct dl_list  s_checked_cache;
 /* 已发送的数据帧            
 应答方式:默认是按照每次间隔FRAME_WINDOW 帧需要应答一次 
 首尾帧需要应答 应答数据不OK 则需要重发当前window的所有帧 */
-//static struct dl_list s_sending_cache;
 /* window的起始点       -1: no start yet */ 
 static int s_window_slide = -1; 
 
@@ -281,23 +277,6 @@ static void sender_packet_schedule(struct fifo_sender *item, int window_slide)
 				sender_publish_frames(s_window_slide, item, frame_num);
 }
 
-#if 0
-static void sender_frame_checked_reinit(uint16_t packet_len, MOBLEBOOL clean_flag)
-{
-		if(clean_flag){
-				/* 清空cache */
-        struct dlist_cache *item;
-        struct dlist_cache *next;
-        dl_list_for_each_safe(item, next, &s_checked_cache, struct dlist_cache, node) {
-            dl_list_del(&item->node);
-            dlist_cache_free(item);
-      	}
-		}
-
-		dl_list_init(&s_checked_cache);
-}
-#endif
-
 
 static void sender_window_slide(MOBLEUINT8 const *pRxData, MOBLEUINT32 dataLength)
 {
@@ -314,13 +293,7 @@ static void sender_window_slide(MOBLEUINT8 const *pRxData, MOBLEUINT32 dataLengt
 		uint32_t slen = ((item->ins.length-pos) > FRAME_SIZE) ? FRAME_SIZE : (item->ins.length-pos);
 		if(slen != dataLength)
 			return;
-		// 检查发送的应用数据
-		printf("check: ");
-		for(int i=0;i<dataLength;i++)
-		{
-				printf("%x ", pRxData[i]);
-		}
-		printf("\n");
+
 		if(memcmp(pRxData,&item->ins.body[pos],slen) != 0)
 			return;
 			
@@ -347,24 +320,14 @@ void sender_update_OnRespon_frame(MOBLEUINT8 command,
 			return;
 		
 		/* get the first byte*/
-		uint8_t seq = (pRxData[0]>>3);
+//		uint8_t seq = (pRxData[0]>>3);
 		uint8_t len = pRxData[0] & 0x07;
 
-		printf("seq:%x \n", seq);
 		/* check the length */
 		if((dataLength<2) || ((len+1) != dataLength))
 			return;
-
-#if 0
-		if(seq == 0){
-				uint16_t packet_len = pRxData[1];
-				sender_frame_checked_reinit(packet_len, MOBLE_TRUE);
-		}
-#endif
 		
 		sender_window_slide(pRxData,dataLength);
-		
-
 }
 
 

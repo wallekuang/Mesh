@@ -140,6 +140,7 @@ MOBLEBOOL receiver_update(MOBLE_ADDRESS peer_addr,
     struct dlist_cache *item;
     dl_list_for_each(item, &s_receive_cache, struct dlist_cache, node) {
         uint32_t end = item->offset + item->length;
+				printf("fill_offset:%d  \n",fill_offset);
 				printf("item->offset:%d  end:%d \n",item->offset, end);
         if (fill_offset >= item->offset && fill_offset < end) {
             if (fill_offset + fill_len <= end) {
@@ -157,6 +158,7 @@ MOBLEBOOL receiver_update(MOBLE_ADDRESS peer_addr,
 		
 		// if It have not enough cache  return
 		if (NULL == new) {
+				ret = MOBLE_FALSE;
 				TRACE_I(TF_VENDOR,"have not enough cache \n");
 				return ret;
 		}
@@ -166,11 +168,10 @@ MOBLEBOOL receiver_update(MOBLE_ADDRESS peer_addr,
 		receiver_frame_add_cache(new);
 		
 		memcpy(&s_packet.body[fill_offset],&data[data_offset],fill_len);
-		
-		ret = MOBLE_TRUE;
 
 		 /* completed send, nofity application  */
     if (dl_list_len(&s_receive_cache) == 1) {
+				ret = MOBLE_TRUE;
 				printf("new->length:%d \n", new->length);
         if (new->offset == 0 && new->length >= s_packet.length) {  
             if(s_receiver_done_cb != NULL){

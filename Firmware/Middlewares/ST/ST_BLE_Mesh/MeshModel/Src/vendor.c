@@ -124,7 +124,7 @@ MOBLE_RESULT Vendor_WriteLocalDataCb(MOBLE_ADDRESS peer_addr,
   TRACE_I(TF_VENDOR,"Vendor_WriteLocalDataCb: peer_addr=[%02x], dst_peer=[%02x],\
          command=[%02x], Response=[%02x] \n\r", peer_addr, dst_peer, command, response);
           TRACE_I(TF_VENDOR,"DATA_RECEIVED length = %d\n\r",length);
-#if 1
+#if 0
          for (idx=0; idx<length; idx++)
          {
            TRACE_I(TF_VENDOR,"data[%d]= %d ",idx,data[idx]);  
@@ -776,7 +776,7 @@ MOBLE_RESULT VendorModel_PID1_ProcessMessageCb(MOBLE_ADDRESS peer_addr,
     }
     else 
     {  /* Write Commands with or without response received */
-       TRACE_M(TF_VENDOR,"Command Write received, process the command  \n\r");
+       //TRACE_M(TF_VENDOR,"Command Write received, process the command  \n\r");
        result = Vendor_WriteLocalDataCb(peer_addr, dst_peer, command, pRxData, dataLength, cmd_response );
     }
 
