@@ -68,7 +68,7 @@ Either use 0 to disable or 1 to enable
 #define TF_LIGHT                           0
 #define TF_LIGHT_LC                        0
 #define TF_SENSOR                          0
-#define TF_VENDOR                          0
+#define TF_VENDOR                          1
 #define TF_NEIGHBOUR                       0
 #define TF_LPN_FRND                        0
 #define TF_ELEMENTS                        0
@@ -77,7 +77,7 @@ Either use 0 to disable or 1 to enable
 #define TF_HANDLER                         0
 #define TF_INIT                            1
 #define TF_MISC                            1
-#define TF_SERIAL_CTRL                     0
+#define TF_SERIAL_CTRL                     1
 
 /*******************************************************************************
 *** Following section helps to select right configuration of Models  ***********
@@ -224,7 +224,7 @@ or by Vendor Model.
 @ define Macro for Vendor Publishing
 @ Undefine or comment Macro for Generic On Off Publishing
 */
-//#define VENDOR_MODEL_PUBLISH
+#define VENDOR_MODEL_PUBLISH
  
 /******************************************************************************/
 

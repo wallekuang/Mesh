@@ -40,13 +40,19 @@
 */
 
 /* Includes ------------------------------------------------------------------*/
+#include <string.h>
+#include <stdlib.h>
+
 #include "hal_common.h"
 #include "mesh_cfg.h"
 #include "bluenrg_mesh.h"
 #include "vendor.h"
 #include "appli_test.h"
 #include "models_if.h"
-#include <string.h>
+
+#include "sender.h"
+#include "receiver.h"
+#include "common.h"
 
 /** @addtogroup BlueNRG_Mesh
 *  @{
@@ -69,6 +75,8 @@ extern MOBLEUINT8 NumberOfElements;
 extern MOBLEUINT8 ResponseBuffer[8];
 extern MOBLEUINT8 BuffLength;
 extern MOBLEUINT8 Appli_LedState;
+
+
 
 /*
 -------------*******************-------------------------
@@ -116,12 +124,13 @@ MOBLE_RESULT Vendor_WriteLocalDataCb(MOBLE_ADDRESS peer_addr,
   TRACE_I(TF_VENDOR,"Vendor_WriteLocalDataCb: peer_addr=[%02x], dst_peer=[%02x],\
          command=[%02x], Response=[%02x] \n\r", peer_addr, dst_peer, command, response);
           TRACE_I(TF_VENDOR,"DATA_RECEIVED length = %d\n\r",length);
+#if 1
          for (idx=0; idx<length; idx++)
          {
-           TRACE_I(TF_VENDOR,"data[%d]= %d",idx,data[idx]);  
-           TRACE_I(TF_VENDOR,"\n\r");
+           TRACE_I(TF_VENDOR,"data[%d]= %d ",idx,data[idx]);  
          }
-         
+				 TRACE_I(TF_VENDOR,"\n\r");
+#endif
          if(ADDRESS_IS_UNICAST(dst_peer))
          {
            MOBLEUINT8 elementNumber;
@@ -152,7 +161,18 @@ MOBLE_RESULT Vendor_WriteLocalDataCb(MOBLE_ADDRESS peer_addr,
              }
              
              /* Default case - Not valid command */
-           default:
+					 case APPLI_THROUGHPUT_CMD:
+					 	{
+								MOBLEBOOL res = receiver_update(peer_addr, dst_peer, command, data, length, response);
+								if ((res && response)&& ADDRESS_IS_UNICAST(dst_peer))
+			          {
+			             VendorModel_SendResponse(VENDOR_STMICRO_CID, peer_addr, dst_peer, command, data, length);
+			             TRACE_M(TF_VENDOR,"Sending Response for Unicast \n\r");
+			          }
+								response = MOBLE_FALSE;
+					 	}
+					 	break;
+					 default:
              {
                status = STATUS_INVALID_COMMAND;
                break;
@@ -440,14 +460,18 @@ MOBLE_RESULT Vendor_OnResponseDataCb(MOBLE_ADDRESS peer_addr,
    MOBLEUINT32 timeStampRcv;
    MOBLEUINT8 subCmd = pRxData[0];
    MOBLEUINT16 hitcmdcount = 0;
-   
-   
+
+	
   /* Traces for the Data */
   TRACE_I(TF_SERIAL_CTRL,"Peer_addr=[%02x],\n\r", peer_addr);
   TRACE_I(TF_SERIAL_CTRL,"DATA_RECEIVED length = %d\n\r", dataLength);
-  
+  printf("command:%x \n",command);
   switch(command)
   {
+  	case APPLI_THROUGHPUT_CMD:
+			
+			sender_update_OnRespon_frame(command, pRxData, dataLength, response);
+			break;
     case APPLI_TEST_CMD:
       {
          switch(subCmd)
@@ -564,19 +588,28 @@ void Vendor_Publish(MOBLE_ADDRESS srcAddress)
   {
     AppliBuffer[0] = APPLI_CMD_ON;
   }
+
+	
+	uint8_t elementNumber = Bluenrg_GetElementNumber();
+	uint16_t publishAddress = BluenrgMesh_GetPublishAddress(elementNumber, VENDORMODEL_STMICRO_ID1);
+	TRACE_I(TF_VENDOR,"srcAddress:%x publishAddress:%x \n", srcAddress, publishAddress);
   
   result = BluenrgMesh_SetRemotePublication(VENDORMODEL_STMICRO_ID1, srcAddress,
                                             APPLI_LED_CONTROL_STATUS_CMD, 
                                             AppliBuffer, sizeof(AppliBuffer),
-                                            MOBLE_FALSE, MOBLE_TRUE);
+                                            MOBLE_TRUE, MOBLE_TRUE);
   
-   if(result)
-   {
+   if(result){
      TRACE_I(TF_VENDOR,"Publication Error \r\n");
    }
+
    
   CommandStatus = AppliBuffer[0];
 }
+
+
+
+
          
 /**
 * @brief  Test Command with Vendor Model used to calculate the time of packet to
@@ -701,8 +734,8 @@ MOBLE_RESULT VendorModel_PID1_ProcessMessageCb(MOBLE_ADDRESS peer_addr,
     
   tClockTime delay_t = Clock_Time();
   
-  TRACE_I(TF_VENDOR,"dst_peer = [0x%02x] , peer_add = [0x%02x], opcode= [0x%02x] \r\n  ",
-                                                    dst_peer, peer_addr, opcode);
+  //TRACE_I(TF_VENDOR,"dst_peer = [0x%02x] , peer_add = [0x%02x], opcode= [0x%02x] \r\n  ",
+  //                                                  dst_peer, peer_addr, opcode);
 
   /*  opcode: response  : Read-Write           : Command   
                           R/nW : 1 = Read

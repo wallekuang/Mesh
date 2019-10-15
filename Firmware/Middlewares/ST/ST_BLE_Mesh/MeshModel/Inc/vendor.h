@@ -64,7 +64,9 @@
 #define APPLI_DEVICE_INFO_CMD                        0x2U
 #define APPLI_LED_CONTROL_STATUS_CMD                 0x3U
 #define APPLI_ELEMENT_TYPE_CMD                       0x4U
-#define APPLI_SENSOR_CNTRL_CMD                       0X5U
+#define APPLI_SENSOR_CNTRL_CMD                       0x5U
+
+#define APPLI_THROUGHPUT_CMD												 0x6U								
 /******************************************************************************/
 
 /****************Data Received from Android/iOS. B0 = SubCommand***************/

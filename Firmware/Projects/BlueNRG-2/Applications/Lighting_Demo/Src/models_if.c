@@ -294,7 +294,7 @@ void GetApplicationVendorModels(const MODEL_Vendor_cb_t** pModelsTable, MOBLEUIN
   *pModelsTable = Model_Vendor_cb       ;
   *VendorModelscount = MODEL_VENDOR_COUNT;
   
-   TRACE_M(TF_VENDOR,"GetApplicationVendorModels \r\n");
+   //TRACE_M(TF_VENDOR,"GetApplicationVendorModels \r\n");
 }
 
 /**
@@ -349,6 +349,7 @@ void BluenrgMesh_ModelsProcess(void)
 #endif
 }
 
+
 /**
 * @brief  Publish Command for Models
 * @param  void
@@ -359,7 +360,8 @@ void BluenrgMesh_ModelsCommand(void)
   MOBLE_ADDRESS srcAdd = BluenrgMesh_GetAddress();
   
 #ifdef VENDOR_MODEL_PUBLISH   
-  Vendor_Publish(srcAdd);
+  	//Vendor_Publish(srcAdd);
+  	app_control_test();
 #else
   Generic_Publish(srcAdd);
 #endif  

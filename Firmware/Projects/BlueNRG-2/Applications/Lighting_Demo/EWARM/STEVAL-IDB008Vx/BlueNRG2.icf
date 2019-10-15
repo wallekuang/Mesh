@@ -254,6 +254,9 @@ keep {section .intvec};
 define block CSTACK     with alignment = 8, size = 0x950  { };
 do not initialize { section CSTACK };
 
+define block HEAP     with alignment = 8, size = 0x400  { };
+do not initialize { section HEAP };
+
 initialize by copy { readwrite };
 do not initialize  {section .noinit};
 
@@ -304,6 +307,7 @@ place at address mem: 0x20000034 { block Crash_Info_block, };
 *******************************************************************************/
 place in REGION_FLASH { readonly };
 place in REGION_RAM { readwrite };
+place in REGION_RAM {block HEAP };
 place at end of REGION_RAM {block CSTACK };
 
 place at address mem:0x1007D000 { readonly section .appconfig };

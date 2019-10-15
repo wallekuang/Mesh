@@ -10,7 +10,7 @@
       <TargetName>Lighting</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
+      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>BlueNRG-2</Device>
@@ -310,7 +310,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>4</Optim>
+            <Optim>2</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -443,6 +443,26 @@
               <FileName>appli_light_lc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Src\appli_light_lc.c</FilePath>
+            </File>
+            <File>
+              <FileName>dcache.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Src\dcache.c</FilePath>
+            </File>
+            <File>
+              <FileName>receiver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Src\receiver.c</FilePath>
+            </File>
+            <File>
+              <FileName>sender.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Src\sender.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_control.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Src\app_control.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1218,6 +1238,26 @@
               <FileName>appli_light_lc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Src\appli_light_lc.c</FilePath>
+            </File>
+            <File>
+              <FileName>dcache.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Src\dcache.c</FilePath>
+            </File>
+            <File>
+              <FileName>receiver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Src\receiver.c</FilePath>
+            </File>
+            <File>
+              <FileName>sender.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Src\sender.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_control.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Src\app_control.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -2159,6 +2159,9 @@
         <group>
             <name>User</name>
             <file>
+                <name>$PROJ_DIR$\..\..\Src\app_control.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\..\..\Src\appli_generic.c</name>
             </file>
             <file>
@@ -2183,6 +2186,9 @@
                 <name>$PROJ_DIR$\..\..\Src\BlueNRG1_it.c</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\..\..\Src\dcache.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\..\..\Src\hal.c</name>
             </file>
             <file>
@@ -2193,6 +2199,12 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\..\Src\pal_nvm.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\..\Src\receiver.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\..\Src\sender.c</name>
             </file>
         </group>
     </group>

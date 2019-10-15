@@ -50,6 +50,8 @@
 #include "appli_nvm.h"
 #include "gp_timer.h"
 #include "mesh_cfg_usr.h"
+#include "vendor.h"
+#include "app_control.h"
 
 /** @addtogroup BlueNRG_Mesh
 *  @{
@@ -384,7 +386,7 @@ MOBLE_RESULT Appli_BleSetTxPowerCb(void)
 MOBLE_RESULT Appli_BleSetUUIDCb(MOBLEUINT8 *uuid_prefix_data)
 {
   /* UUID is 128 bits (16 bytes) and can guarantee uniqueness across space and time.
-     It can be “Time-based “ UUID or “truly-random or pseudo-random numbers”
+     It can be “Time-based ?UUID or “truly-random or pseudo-random numbers?
  
      In this buffer user need to fill 10 bytes of UUID data. 
      Remaining 6 bytes, library fill this data with BDaddress.
@@ -393,8 +395,8 @@ MOBLE_RESULT Appli_BleSetUUIDCb(MOBLEUINT8 *uuid_prefix_data)
         F81D4FAE-7DEC-XBC4-Y12F-17D1AD07A961 (16 bytes)
         <any number> |_|  |_|   <BDAddress>
 
-      X = 1 i.e. “Time Base UUID” 
-      X = 4 i.e. “Random Number“
+      X = 1 i.e. “Time Base UUID?
+      X = 4 i.e. “Random Number?
       Y = 4 i.e. Conforming to the current spec 
     For UUID information refer RFC4122
   */
@@ -1144,6 +1146,9 @@ void Appli_Process(void)
           BluenrgMesh_SetUnprovisionedDevBeaconInterval(0);
       }
 #endif
+
+	app_control_tick();
+
 }
 /**
 * @brief  Initializes the Application  
@@ -1160,6 +1165,7 @@ void Appli_Init(void)
 #if PB_ADV_SUPPORTED
   Timer_Set(&discoverTimer, discoverTimerinterval);
 #endif
+	app_control_init();
 }
 
 /**
